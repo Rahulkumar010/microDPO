@@ -1,4 +1,4 @@
-# microDPO ⚖️
+# microDPO 
 
 **The simplest, fastest repository for understanding and training Direct Preference Optimization (DPO) from scratch.**
 
