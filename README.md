@@ -99,7 +99,3 @@ While `microDPO` is meant to be minimal, it serves as a perfect foundation for e
 ## Acknowledgements
 
 Inspired by the pedagogical brilliance of Andrej Karpathy's `nanoGPT` and `micrograd`. The math is directly sourced from the original [Direct Preference Optimization paper](https://arxiv.org/abs/2305.18290) by Rafailov et al.
-
-## License
-
-MIT
