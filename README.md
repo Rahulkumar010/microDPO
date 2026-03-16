@@ -25,7 +25,7 @@ $$\mathcal{L}_{DPO} = -\log \sigma \left( \beta \left( \log \frac{\pi_\theta(y_w
 ## Quick Start
 
 ```bash
-git clone [https://github.com/Rahulkumar010/microDPO.git](https://github.com/Rahulkumar010/microDPO.git)
+git clone https://github.com/Rahulkumar010/microDPO.git
 cd microDPO
 uv sync --link-mode=copy
 
