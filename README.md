@@ -24,6 +24,25 @@ $$\mathcal{L}_{DPO} = -\log \sigma \left( \beta \left( \log \frac{\pi_\theta(y_w
 
 ## Quick Start
 
+### Interactive Visual Notebook
+
+Open [index.html](index.html) in a browser. No build step, Python runtime, or server is needed.
+
+This notebook includes:
+
+- All five preference pairs with character IDs, padding masks, and 64-token truncation.
+- Adjustable policy/reference log probabilities and beta, with live rewards, margin, and DPO loss.
+- Training-curve replay, a logarithmic loss scale, and a concept check.
+- The MiniGPT architecture and the distinction between the learning policy and fixed reference.
+
+The standalone page bundles **23 exact sampled epochs** from the saved run. Use **Import metrics.json** to display all 1,000 recorded epochs or a new run from `train.py`. When served over HTTP, the page automatically loads the adjacent `metrics.json`. Imported files stay in the browser.
+
+The score controls are illustrative, not checkpoint inference. Recorded training metrics are separate from the sandbox and do not establish generalization. This implementation scores all non-padding next-token targets, including prompt and separator targets.
+
+The snapshot test compares against the bundled `metrics.json`; after replacing that run, update the snapshot in `visualization.js` as well.
+
+### Train and Run Inference
+
 ```bash
 git clone https://github.com/Rahulkumar010/microDPO.git
 cd microDPO
